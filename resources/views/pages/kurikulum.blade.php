@@ -1,9 +1,7 @@
 @extends('layouts.index')
 @section('heading', 'akademi')
 @section('page')
-    <a href="" class="">akademi</a>
-    <span class="mx-3 fas fa-angle-right"></span>
-    <span class="current">Kurikulum</span>
+    <a href="" class="">Artikel</a>
 @endsection
 @section('content')
 
@@ -14,7 +12,7 @@
                 <div class="row">
                     <div class="col-lg-12 ">
                         <div class="section-informasi pb-4">
-                            <h3 class="text-center text-capitalize">Kurikulim 2022-2023
+                            <h3 class="text-center text-capitalize">ArtikelTentangBlalala
                             </h3>
                         </div>
                     </div>
