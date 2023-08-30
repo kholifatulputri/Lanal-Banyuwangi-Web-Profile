@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\AlumniController;
+use App\Http\Controllers\Admin\DokumentasiController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\BeritaController;
 use App\Http\Controllers\Admin\MotivasiController;
@@ -36,7 +36,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('alumni', [HomeController::class, 'testimoni'])->name('alumni');
+Route::get('Dokumentasi', [HomeController::class, 'testimoni'])->name('Dokumentasi');
 
 Route::get('fasilitas', [HomeController::class, 'fasilitas'])->name('fasilitas');
 
@@ -108,12 +108,12 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::delete('admin/berita/destroy/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
     Route::get('admin/berita/{id}', [BeritaController::class, 'show'])->name('berita.show');
 
-    // Alumni
-    Route::get('admin/alumni', [AlumniController::class, 'index'])->name('alumni.index');
-    Route::post('admin/alumni/store', [AlumniController::class, 'store'])->name('alumni.store');
-    Route::get('admin/alumni/{id_alumni}', [AlumniController::class, 'edit'])->name('alumni.edit');
-    Route::delete('admin/alumni/destroy/{id_alumni}', [AlumniController::class, 'destroy'])->name('alumni.destroy');
-    Route::patch('admin/alumni/update/{id_alumni}', [AlumniController::class, 'update'])->name('alumni.update');
+    // Dokumentasi
+    Route::get('admin/Dokumentasi', [DokumentasiController::class, 'index'])->name('Dokumentasi.index');
+    Route::post('admin/Dokumentasi/store', [DokumentasiController::class, 'store'])->name('Dokumentasi.store');
+    Route::get('admin/Dokumentasi/{id_Dokumentasi}', [DokumentasiController::class, 'edit'])->name('Dokumentasi.edit');
+    Route::delete('admin/Dokumentasi/destroy/{id_Dokumentasi}', [DokumentasiController::class, 'destroy'])->name('Dokumentasi.destroy');
+    Route::patch('admin/Dokumentasi/update/{id_Dokumentasi}', [DokumentasiController::class, 'update'])->name('Dokumentasi.update');
 
     // Staff
     Route::get('admin/staff', [StaffController::class, 'index'])->name('staff.index');

@@ -1,8 +1,8 @@
 @extends('layout_admin.template')
-@section('heading', 'Alumni AMIK Medicom')
+@section('heading', 'dokumentasi AMIK Medicom')
 
 @section('page')
-    <li class="breadcrumb-item active">Alumni</li>
+    <li class="breadcrumb-item active">dokumentasi</li>
 @endsection
 @section('content')
     <!-- Main content -->
@@ -15,7 +15,7 @@
                             <h3 class="card-title">
                                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
                                     data-target=".bd-example-modal-lg">
-                                    <i class="nav-icon fas fa-folder-plus"></i> &nbsp; Tambah Data Alumni
+                                    <i class="nav-icon fas fa-folder-plus"></i> &nbsp; Tambah Data dokumentasi
                                 </button>
                             </h3>
                         </div>
@@ -26,26 +26,26 @@
                                     <tr>
                                         <th>No.</th>
                                         <th>Gambar</th>
-                                        <th width="20%">Nama Alumni</th>
+                                        <th width="20%">Nama dokumentasi</th>
                                         <th width="40%">Tempat Kerja</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($alumni as $data) 
+                                    @foreach ($dokumentasi as $data) 
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
                                             <td> <img src="<?= asset($data->gambar) ?>" width="80px"
                                                     class="img-thumbnail">
-                                            <td>{{ $data->nama_alumni }}</td>
+                                            <td>{{ $data->nama_dokumentasi }}</td>
                                             <td>{{ $data->tempat_bekerja }}</td>
                                             </td>
                                             <td>
-                                                <form action="{{ route('alumni.destroy', $data->id_alumni) }}"
+                                                <form action="{{ route('dokumentasi.destroy', $data->id_dokumentasi) }}"
                                                     method="post">
                                                     @csrf
                                                     @method('delete')
-                                                    <a href="{{ route('alumni.edit', Crypt::encrypt($data->id_alumni)) }}"
+                                                    <a href="{{ route('dokumentasi.edit', Crypt::encrypt($data->id_dokumentasi)) }}"
                                                         class="btn btn-success btn-sm"><i class="nav-icon fas fa-edit"></i>
                                                         &nbsp; Edit</a>
 
@@ -74,18 +74,18 @@
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Tambah Data Alumni</h4>
+                    <h4 class="modal-title">Tambah Data dokumentasi</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="{{ route('alumni.store') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('dokumentasi.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="card-body">
 
                             <div class="form-group">
-                                <label for="gambar">Gambar Alumni</label>
+                                <label for="gambar">Gambar dokumentasi</label>
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input  @error('gambar') is-invalid @enderror"
@@ -101,12 +101,12 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="nama_alumni">Nama Alumni </label>
-                                <input type="text" name="nama_alumni" value="{{ old('nama_alumni') }}"
-                                    class="form-control @error('nama_alumni') is-invalid @enderror"
+                                <label for="nama_dokumentasi">Nama dokumentasi </label>
+                                <input type="text" name="nama_dokumentasi" value="{{ old('nama_dokumentasi') }}"
+                                    class="form-control @error('nama_dokumentasi') is-invalid @enderror"
                                     placeholder="Ramson Rajagukguk, A.Md">
                                 <div class="text-danger">
-                                    @error('nama_alumni')
+                                    @error('nama_dokumentasi')
                                         Nama tidak boleh kosong.
                                     @enderror
                                 </div>
@@ -150,7 +150,7 @@
             bsCustomFileInput.init();
         });
 
-        $("#Alumni").addClass("active");
+        $("#dokumentasi").addClass("active");
 
     </script>
 

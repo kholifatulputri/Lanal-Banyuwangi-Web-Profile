@@ -1,7 +1,7 @@
 @extends('layouts.home')
 @section('content')
     <!-- hero slider -->
-    <section class="hero-section overlay bg-cover" data-background="{{ asset('assets/images/poliwangi.jpg') }}">
+    <section class="hero-section overlay bg-cover" data-background="{{ asset('assets/images/lanal.jpeg') }}">
         <div class="container">
             <div class="hero-slider">
                 <!-- slider item -->
@@ -130,15 +130,15 @@
     </div>
     <!-- /Pengumuman -->
 
-    <!-- Alumni -->
+    <!-- Dokumentasi -->
     <section class="section-sm ">
         <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex align-items-center section-title justify-content-between">
-                        <h2 class="mb-0 text-nowrap me-3">Testimonial Alumni</h2>
+                        <h2 class="mb-0 text-nowrap me-3">Testimonial Dokumentasi</h2>
                         <div class="border-top w-50 border-primary d-none d-md-block d-sm-block"></div>
-                        <a href="{{ route('alumni') }}" class="btn btn-primary-outline">Lihat Semua</a>
+                        <a href="{{ route('Dokumentasi') }}" class="btn btn-primary-outline">Lihat Semua</a>
                     </div>
                 </div>
             </div>
@@ -146,15 +146,15 @@
             <div class="row justify-content-center">
                 <!-- course item -->
                 @foreach ($alumni as $item)
-                    <div class="testimoni-alumni hover-shadow" data-aos="fade-up">
+                    <div class="testimoni-Dokumentasi hover-shadow" data-aos="fade-up">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img"
                                 style="background-image: url({{ Storage::url($item->gambar) }});">
                             </div>
                         </div>
-                        <p class="text-center">Alumni</p>
-                        <div class="card-alumni">
-                            <h4 class="title-alumni">{{ $item->nama_alumni }}, A.Md</h4>
+                        <p class="text-center">Dokumentasi</p>
+                        <div class="card-Dokumentasi">
+                            <h4 class="title-Dokumentasi">{{ $item->nama_Dokumentasi }}, A.Md</h4>
                             <h3 class="title-work mb-1">Bekerja Sebagai {{ $item->tempat_bekerja }}</h3>
                         </div>
                         <div class="video text-center">
@@ -169,7 +169,7 @@
             <!-- /course list -->
         </div>
     </section>
-    <!-- /Alumni -->
+    <!-- /Dokumentasi -->
 
     <!-- Video -->
     <section class="section-sm">
