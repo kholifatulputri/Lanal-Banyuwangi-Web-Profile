@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shrotcut icon" href="{{ url('assets/images/logo.png') }}">
+    <link rel="shrotcut icon" href="{{ url('assets/images/logolanal.png') }}">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
@@ -33,7 +33,7 @@
                         <div class="main-info-area">
                             <div class="left-section wrap-logo-top">
                                 <a href="{{ url('/') }}" class="link-to-home"><img
-                                        src="assets/images/logo-top-1.png" alt="medicom" /></a>
+                                        src="assets/images/markas.png" alt="lanal" /></a>
                             </div>
                         </div>
                     </div>

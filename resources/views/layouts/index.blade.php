@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shrotcut icon" href="{{ url('assets/images/logo.png') }}">
+    <link rel="shrotcut icon" href="{{ url('assets/images/logolanal.png') }}">
     <title>LANAL BANYUWANGI</title>
 
     <!-- Bootstrap CSS -->
@@ -54,7 +54,7 @@
         @include('layouts.navbar')
     </header>
     <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4"
-        data-background="{{ asset('assets/images/bg_1.jpg') }}">
+        data-background="{{ asset('assets/images/lanal.jpeg') }}">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
