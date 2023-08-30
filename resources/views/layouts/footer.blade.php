@@ -2,80 +2,40 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <h4>Download</h4>
-                <hr>
-                <div class="single-footer-widget tp-widgets">
-                    <div class="ms-1">
-                        <div class="sm-head">
-                            <i class="fas fa-angle-right"></i>
-                            <p>Daftar Bukti Nyisip Mata Kuliah</p>
-                        </div>
-                        <div class="sm-head">
-                            <i class="fas fa-angle-right"></i>
-                            <p>Prosiding Versi 1</p>
-                        </div>
-                        <div class="sm-head">
-                            <i class="fas fa-angle-right"></i>
-                            <p>Modul Mahasiswa</p>
-                        </div>
-                        <div class="sm-head">
-                            <i class="fas fa-angle-right"></i>
-                            <p>Catatan Mahasiswa(CM)</p>
-                        </div>
-                        <div class="sm-head">
-                            <i class="fas fa-angle-right"></i>
-                            <p>Sistem Nilai Medicom V 2.0 (Android)</p>
-                        </div>
-                    </div>
-                </div>
+                <h4>PANGKALAN TNI AL BANYUWANGI</h4>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mb-md-0">
-                <h4>Link Penting </h4>
-                <hr>
+                <h4>Lokasi</h4>
+        
                 <ul class="list-unstyled list-text">
-                    <li><i class="fas fa-angle-right"></i><a href="">BAN-PT Akreditasi Program Studi</a> </li>
-                    <li><i class="fas fa-angle-right"></i><a href="">Forlap Dikti- RISTEKDIKTI</a></li>
-                    <li><i class="fas fa-angle-right"></i><a href="">SIAKAD (SISTEM AKADEMIK)</a></li>
-                    <li><i class="fas fa-angle-right"></i><a href="">E-LEARNING MEDICOM</a></li>
-                    <li><i class="fas fa-angle-right"></i><a href="">E-JOURNAL MEDICOM</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="">Jl. Raya Banyuwangi Situbondo No.48</a> </li>
+                    
                 </ul>
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mb-md-0">
-                <h4>Program Studi</h4>
-                <hr>
-                <ul class="list-unstyled list-text">
-                    <li><i class="fas fa-angle-right"></i><a href=""><i class="icon-check"></i>
-                            Teknologi Rekayasa Perangkat Lunak</a></li>
-                    <li><i class="fas fa-angle-right"></i><a href=""><i class="icon-check"></i> Teknologi Rekayasa Komputer</a>
-                    </li>
-                    <li><i class="fas fa-angle-right"></i><a href=""><i class="icon-check"></i>
-                            Bisnis Digital</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-2 mb-lg-0">
-                <h4>Contact US</h4>
-                <hr>
-                <div class="single-footer-widget tp-widgets">
-                    <div class="ms-1">
-                        <div class="sm-head">
-                            <i class="fas fa-map-marker"></i>
-                            <p>Lokasi : <br>Jalan Raya Jember No.KM13, Kawang, Labanasem, Kec. Kabat, Kabupaten Banyuwangi, Jawa Timur 68461</p>
-
-                        </div>
-                        <div class="sm-head">
+                <h4>Kontak</h4>
+                
+                <div class="sm-head">
                             <i class="fas fa-map-marker"></i>
                             <p>Telephone : <br>+62 (0333) 636780</p>
                         </div>
                         <div class="sm-head">
                             <i class="fas fa-envelope"></i>
-                            <p>Email : <br> poliwangi@poliwangi.ac.id <br>humas@poliwangi.ac.id</p>
+                            <p>Email : <br>lanal.banyuwangi.v@gmail.com</p>
                         </div>
-                    </div>
-                </div>
             </div>
+
+            <div class="col-lg-3 col-md-6 mb-2 ml-4 mb-lg-0">
+                <h4>Sosial Media</h4>
+                
+                <div class="social-links text-center text-md-end pt-2 pt-md-0 col-md-4 mb-2 ml-4 mb-lg-0">
+            <a class="instagram" href="https://instagram.com/lanal_banyuwangi?igshid=MzRlODBiNWFlZA==" target="blank">
+                <i class="fab fa-instagram"></i> </a>
+            <a class="youtube" href="https://youtube.com/@lanalbanyuwangichannel?si=3vqZU90XqLK-mJNY" target="blank"><i
+                    class="fab fa-youtube"></i></a>
         </div>
+  
     </div>
 
     <div id="scrolltotop_parent" class="top-up">
@@ -88,31 +48,6 @@
 <!-- Footer -->
 <footer class="py-1 bg-footer ">
     <div class="container d-md-flex">
-        <div class="me-md-auto text-center text-md-start">
-            <p class="copyright">
-
-                <script>
-                    document.write(new Date().getFullYear());
-                </script>
-                &copy; Copyright <strong><span>AMIK Medicom</span></strong>.
-            </p>
-            <p class="credits">
-                Designed by <a href="https://www.instagram.com/ramsonrajagukguk" target="blank">Team IT
-                    Medicom</a>
-            </p>
-        </div>
-
-        <div class="social-links text-center text-md-end pt-3 pt-md-0">
-            <a class="facebook" href="https://www.facebook.com/ramson.rajagukguk" target="blank"><i
-                    class="fab fa-facebook"></i></a>
-            <a class="instagram" href="https://www.instagram.com/ramsonrajagukguk" target="blank">
-                <i class="fab fa-instagram"></i> </a>
-            <a class="youtube" href="https://www.youtube.com/channel/UCVTCKVQf3deWY7g9WcC3Dzg" target="blank"><i
-                    class="fab fa-youtube"></i></a>
-            <a class="twitter" href="https://twitter.com/RamsonRJG" target="blank"><i
-                    class="fab fa-twitter"></i></a>
-        </div>
-
         {{-- <div class="single-footer-widget text-md-end sosial-media">
             <div class="btn-sosial">
                 <a class="btn-media facebook" href="https://www.facebook.com/ramson.rajagukguk" target="blank"><i

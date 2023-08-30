@@ -44,20 +44,12 @@
                         <div class="main-info-area">
                             <div class="left-section wrap-logo-top">
                                 <a href="{{ url('/') }}" class="link-to-home"><img
-                                        src="{{ asset('assets/images/logo-top-1.png') }}" alt="medicom" /></a>
+                                        src="{{ asset('assets/images/markas.png') }}" alt="medicom" /></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 mb-2 top-title justify-content-center align-items-center d-flex text-center">
-                        <a href="#" class="small text-center"><span
-                                class="fab fa-whatsapp me-2 my-auto"></span>0852-7017-6884</a>
-                        <a href="#" class="small my-auto mx-3"><span class="fas fa-envelope-open mx-2"></span>
-                            sahabatmedicom@gmail.com</a>
-                    </div>
-                    <div class="col-lg-4 mb-2 col-sm-12 d-flex justify-content-center text-sm-center text-lg-end">
-                        <a href="{{ route('login') }}" class="btn-register my-auto"><span
-                                class="fas fa-users mx-1"></span> Login</a>
-                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
