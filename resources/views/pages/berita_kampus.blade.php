@@ -1,12 +1,12 @@
 @extends('layouts.index')
-@section('heading', 'Berita Kampus')
+@section('heading', 'Berita Terkini di Pangkalan TNI AL Banyuwagi')
 @section('page')
     <span class="current">Berita</span>
 @endsection
 @section('content')
 
     {{-- Informasi berita  begin --}}
-    <section class="berita__kampus">
+    <section class="berita__lanal">
         <div class="container">
             <div class="row">
                 @foreach ($berita as $item)

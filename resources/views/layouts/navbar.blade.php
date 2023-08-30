@@ -33,7 +33,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             
                             <li>
-                                <a class="dropdown-item" href="{{ route('kurikulum') }}">Artikel</a>
+                                <a class="dropdown-item" href="{{ route('berita') }}">Artikel</a>
                             </li>
                             
                         </ul>
