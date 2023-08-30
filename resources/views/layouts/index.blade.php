@@ -44,7 +44,7 @@
                         <div class="main-info-area">
                             <div class="left-section wrap-logo-top">
                                 <a href="{{ url('/') }}" class="link-to-home"><img
-                                        src="{{ asset('assets/images/logo-top-1.png') }}" alt="medicom" /></a>
+                                        src="{{ asset('assets/images/markas.png') }}" alt="medicom" /></a>
                             </div>
                         </div>
                     </div>
