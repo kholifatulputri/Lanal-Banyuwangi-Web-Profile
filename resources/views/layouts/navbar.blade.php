@@ -43,11 +43,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">DOKUMENTASI KEGIATAN
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">SIAKAD</a></li>
-                            <li><a class="dropdown-item" href="#">Beasiswa</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Prestasi Mahasiswa</a>
-                            </li>
+                            <li><a class="dropdown-item" href="{{ route('alumni') }}">Galeri</a></li>
                         </ul>
                     </li>
                     

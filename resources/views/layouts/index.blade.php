@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shrotcut icon" href="{{ url('assets/images/logo.png') }}">
     <title>LANAL BANYUWANGI</title>
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ url('assets/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/fontawesome-free/css/all.css') }}" />
@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <h2 class="mb-0 text-uppercase">@yield('heading')</h2>
+                    <h2 class="mb-0 pt-5 text-uppercase">@yield('heading')</h2>
                 </div>
             </div>
         </div>

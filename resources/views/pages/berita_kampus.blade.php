@@ -15,12 +15,22 @@
                             <div class="course-1">
                                 <div class="thumnail">
                                     <a href="{{ route('berita.detail', $item->slug_berita) }}"><img
+<<<<<<< Updated upstream
                                             src="{{ Storage::url($item->gambar) }}" alt="Image" class="img-fluid"></a>
                                     <div class="meta-date text-center p-2">
                                         <span class="day">{{ tanggal('tanggal', $item->publish) }}</span>
                                         <span class="mos">{{ tanggal('bulan', $item->publish) }}</span>
                                         <span class="yr">{{ tanggal('tahun', $item->publish) }}</span>
                                     </div>
+=======
+                                            src="{{ URL::asset($item->gambar)}}" alt="Image" class="img-fluid"></a>
+                                            <div class="meta-date text-center p-2" style="width: 100%; background-color: navy; color: white; font-family: sans-serif; border-radius: 5px; padding: 8px; display: flex; justify-content: space-between;">
+                                                <span class="date">{{ tanggal('tanggal', $item->publish) }} {{ tanggal('bulan', $item->publish) }} {{ tanggal('tahun', $item->publish) }}</span>
+                                            </div>
+
+
+
+>>>>>>> Stashed changes
                                 </div>
                                 <div class="text bg-white berita p-4">
                                     <h3 class="heading"><a

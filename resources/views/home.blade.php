@@ -4,31 +4,18 @@
     <section class="hero-section overlay bg-cover" data-background="{{ asset('assets/images/poliwangi.jpg') }}">
         <div class="container">
             <div class="hero-slider">
-                <!-- slider item -->
-                @foreach ($banner as $item)
-                    <div class="hero-slider-item" data-background="{{ Storage::url($item->gambar_banner) }}">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h1 class="title-slider text-white" data-animation-out="fadeOutRight" data-delay-out="5"
-                                    data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">
-                                    {{ $item->keterangan }}
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-                <!-- slider item -->
             </div>
         </div>
     </section>
     <!-- /hero slider -->
 
-    <!-- Pengumuman -->
+    <!-- Komandan Lanal Bwi -->
     <div class="news-updates">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="card-pengumuman">
+<<<<<<< Updated upstream
                         <div class="section-heading d-flex align-items-center justify-content-between">
                             <h2 class="text-black">Pengumuman</h2>
                             <a href="{{ route('home.pengumuman') }}" class="btn btn-primary-outline">Selengkapnya<i
@@ -58,8 +45,17 @@
                                             {{ time_elapsed_string($item->created_at) }}</span>
                                     </p>
                                 </div>
+=======
+                    <div class="section-heading d-flex align-items-center justify-content-between">
+>>>>>>> Stashed changes
                             </div>
-                        @endforeach
+                        <div class="team__item">
+                            <div class="team_cover">
+                                        <img src="assets/images/fjabatan/dimyati.jpg" alt=""  >
+                                    </div>
+                                    <h5>Komandan TNI Angkatan Laut Banyuwangi</h5>
+                                    <span>Indra Nusha Raspati</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-6">
@@ -72,11 +68,11 @@
                         <div class="owl-slide-3 owl-carousel">
                             @foreach ($berita as $item)
                                 <div class="course-1-item">
-                                <figure class="thumnail">
+                                <figure class="thumbnail">
                                         <a href="{{ route('berita.detail', $item->slug_berita) }}">
                                             <img
-                                                src="{{Storage::url($item->gambar)}}" alt="Image"
-                                                class="img-fluid">
+                                                src="{{ URL::asset($item->gambar)}}" alt="Image"
+                                                class="img-fluid"> 
                                         </a>
                                     </figure>
 
@@ -130,46 +126,99 @@
     </div>
     <!-- /Pengumuman -->
 
-    <!-- Alumni -->
-    <section class="section-sm ">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex align-items-center section-title justify-content-between">
-                        <h2 class="mb-0 text-nowrap me-3">Testimonial Alumni</h2>
-                        <div class="border-top w-50 border-primary d-none d-md-block d-sm-block"></div>
-                        <a href="{{ route('alumni') }}" class="btn btn-primary-outline">Lihat Semua</a>
+
+    <!-- Visi Misi & Sejarah -->
+    <section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="row align-items-center">
+                    <img src="https://webmediadigital.com/storage/images/about.png" class="img-fluid" alt="work-image">
+                </div>
+                <!--end row-->
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-6 col-md-6 mt-4 mt-lg-0 pt- pt-lg-0">
+                <div class="ms-lg-4">
+                    <div class="section-title">
+                        <span class="badge bg-soft-primary rounded-pill fw-bold">Kenali Perusahaan Kami Lebih
+                            Dekat</span>
+                        <h4 class="title mb-4 mt-3">Mengapa Memilih Kami ?</h4>
+                        <p class="text-muted para-desc">Kenyamanan customer merupakan prioritas utama kami dalam
+                            memberikan layanan, solusi dari permasalahan customer menjadi tanggung jawab yang penuh bagi
+                            kami.</p>
+                        <p class="text-muted para-desc mb-0">Dalam pembuatan dan pengembangan perangkat lunak, kami
+                            selalu menjadikan permasalahan yang dihadapi customer sebagai landasan dan konsep dasar
+                            dalam proses pengembangan. Selain itu kami juga mengutamakan kualitas diatas kuantitas, demi
+                            menjaga kepercayaan customer terhadap kami.</p>
+                    </div>
+
+                    <div class="d-flex mt-4 pt-2">
+                        <i class="uil uil-trophy h5 text-primary"></i>
+                        <div class="flex-1 ms-2">
+                            <h5>Professional</h5>
+                            <p class="mb-0 text-muted">Kami bekerja dan berkolaborasi bersama tim profesional untuk
+                                menciptakan perangkat lunak yang optimal, handal dan mudah digunakan.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-4 pt-2">
+                        <i class="uil uil-award-alt h5 text-primary"></i>
+                        <div class="flex-1 ms-2">
+                            <h5>Best Service </h5>
+                            <p class="mb-0 text-muted">Kami menyediakan layanan terbaik dalam pengembangan perangkat
+                                lunak guna menjawab semua kebutuhan digital Anda.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4 pt-2">
+                        <i class="uil uil-comment-question h5 text-primary"></i>
+                        <div class="flex-1 ms-2">
+                            <h5>Online Support</h5>
+                            <p class="mb-0 text-muted">Kami memberikan layanan online support yang responsif terhadap
+                                pertanyaan dan permintaan bantuan.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- course list -->
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+    <!-- /Alumni -->
+    <section class="mb-3 testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4">Student Says About Us</h2>
+                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
+                        necessary regelialia. It is a paradisematic country</p>
+                </div>
+            </div>
             <div class="row justify-content-center">
-                <!-- course item -->
-                @foreach ($alumni as $item)
-                    <div class="testimoni-alumni hover-shadow" data-aos="fade-up">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img"
-                                style="background-image: url({{ Storage::url($item->gambar) }});">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel">
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="user-img me-4"
+                                    style="background-image: url({{ asset('assets/images/alumni/teacher-4.jpg') }})">
+                                </div>
+                                <div class="text ml-2">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.</p>
+                                    <p class="name">Racky Henderson</p>
+                                </div>
                             </div>
                         </div>
-                        <p class="text-center">Alumni</p>
-                        <div class="card-alumni">
-                            <h4 class="title-alumni">{{ $item->nama_alumni }}, A.Md</h4>
-                            <h3 class="title-work mb-1">Bekerja Sebagai {{ $item->tempat_bekerja }}</h3>
-                        </div>
-                        <div class="video text-center">
-                            <a class="icon-video venobox" href="{{ $item->link }}" data-vbtype="video">
-                                <i class="fas fa-play"></i>
-                            </a>
-                        </div>
                     </div>
-                @endforeach
-                <!-- course item -->
+                </div>
             </div>
-            <!-- /course list -->
         </div>
     </section>
-    <!-- /Alumni -->
 
     <!-- Video -->
     <section class="section-sm">
