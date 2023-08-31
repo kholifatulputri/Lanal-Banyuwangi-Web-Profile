@@ -38,12 +38,12 @@
                 <!-- .col-md-8 -->
                 <div class="col-lg-4 sidebar">
                 <div class="sidebar-box">
-                    <h3 class="sidebar-heading">Popular Articles</h3>
+                    <h3 class="sidebar-heading" style="margin-bottom: 20px; font-family: 'Helvetica Neue', sans-serif; font-weight: bold;">Popular Articles</h3>
                     @foreach ($berita_populer as $item)
                         <div class="block-21 mb-4 d-flex">
                             <a class="blog-img me-2" style="background-image: url({{ Storage::url($item->gambar) }});"></a>
                             <div class="text">
-                                <h4 class="article-title"><a href="{{ route('berita.detail', $item->slug_berita) }}">{{ $item->judul_berita }}</a></h4>
+                                <h4 class="article-title" style="margin-top: 0;"><a href="{{ route('berita.detail', $item->slug_berita) }}">{{ $item->judul_berita }}</a></h4>
                                 <div class="meta">
                                     <div><span class="fas fa-calendar"></span>
                                         {{ tanggal('hari', $item->created_at) }}
@@ -53,6 +53,9 @@
                         </div>
                     @endforeach
                 </div>
+
+
+
             </div>
             
 <!-- END COL -->

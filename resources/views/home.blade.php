@@ -29,11 +29,11 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="card-pengumuman">
-                        <div class="section-heading d-flex align-items-center justify-content-between">
-                            <h2 class="text-black">Pengumuman</h2>
-                            <a href="{{ route('home.pengumuman') }}" class="btn btn-primary-outline">Selengkapnya<i
-                                    class="fas fa-angle-double-right mx-2"></i></a>
-                        </div>
+                    <div class="section-heading d-flex align-items-center justify-content-between">
+                        <h2 class="text-black">Pengumuman</h2>
+                        <a href="{{ route('home.pengumuman') }}" class="btn btn-primary-outline" style="background-color: #E3F2FD; color: #2979FF; border-color: #E3F2FD;">Selengkapnya<i class="fas fa-angle-double-right mx-2"></i></a>
+                    </div>
+
                         @foreach ($pengumuman as $item)
                             <div class="post-entry-big mb-1">
                                 <div class="icon-tanggal me-2">
@@ -64,11 +64,11 @@
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="card-pengumuman">
-                        <div class="section-heading d-flex align-items-center justify-content-between">
-                            <h2 class="text-black">Berita Lanal Banyuwangi</h2>
-                            <a href="{{ route('berita') }}" class="btn btn-primary-outline">Selengkapnya<i
-                                    class="fas fa-angle-double-right mx-2"></i></a>
-                        </div>
+                    <div class="section-heading d-flex align-items-center justify-content-between">
+                        <h2 class="text-black">Berita Lanal Banyuwangi</h2>
+                        <a href="{{ route('berita') }}" class="btn btn-primary-outline" style="background-color: #E3F2FD; color: #2979FF; border-color: #E3F2FD;">Selengkapnya<i class="fas fa-angle-double-right mx-2"></i></a>
+                    </div>
+
                         <div class="owl-slide-3 owl-carousel">
                             @foreach ($berita as $item)
                                 <div class="course-1-item">

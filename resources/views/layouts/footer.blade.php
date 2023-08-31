@@ -17,7 +17,7 @@
                 <h4>Kontak</h4>
                 
                 <div class="sm-head">
-                            <i class="fas fa-map-marker"></i>
+                            <i class="fas fa-phone"></i>
                             <p>Telephone : <br>+62 (0333) 636780</p>
                         </div>
                         <div class="sm-head">

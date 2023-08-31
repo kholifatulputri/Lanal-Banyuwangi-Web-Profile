@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('heading', 'Berita Terkini di Pangkalan TNI AL Banyuwagi')
+@section('heading', 'Berita Terkini di Pangkalan TNI AL Banyuwangi')
 @section('page')
     <span class="current">Berita</span>
 @endsection
@@ -7,7 +7,7 @@
 
     {{-- Informasi berita  begin --}}
     <section class="berita__lanal">
-        <div class="container">
+        <div class="container my-4"> <!-- Add "my-4" class to add vertical margin -->
             <div class="row">
                 @foreach ($berita as $item)
                     <div class="col-md-6 col-lg-4 ">
@@ -16,35 +16,43 @@
                                 <div class="thumnail">
                                     <a href="{{ route('berita.detail', $item->slug_berita) }}"><img
                                             src="{{ Storage::url($item->gambar) }}" alt="Image" class="img-fluid"></a>
-                                    <div class="meta-date text-center p-2">
-                                        <span class="day">{{ tanggal('tanggal', $item->publish) }}</span>
-                                        <span class="mos">{{ tanggal('bulan', $item->publish) }}</span>
-                                        <span class="yr">{{ tanggal('tahun', $item->publish) }}</span>
-                                    </div>
+                                            <div class="meta-date text-center p-2" style="width: 100%; background-color: navy; color: white; font-family: sans-serif; border-radius: 5px; padding: 8px; display: flex; justify-content: space-between;">
+                                                <span class="date">{{ tanggal('tanggal', $item->publish) }} {{ tanggal('bulan', $item->publish) }} {{ tanggal('tahun', $item->publish) }}</span>
+                                            </div>
+
+
+
                                 </div>
                                 <div class="text bg-white berita p-4">
                                     <h3 class="heading"><a
                                             href="{{ route('berita.detail', $item->slug_berita) }}">{{ $item->judul_berita }}</a>
                                     </h3>
                                     <p><?= Str::limit(strip_tags($item->isi), 100, $end = '...') ?></p>
-                                            <div class="d-flex align-items-center mt-4">
-                                                <p class="mb-0"><a href="{{ route('berita.detail', $item->slug_berita) }}"
-                                                        class="btn-read btn-more">Read
-                                                        More <span class="fa fa-arrow-right"></span></a></p>
-                                                <p class="ms-auto mb-0">
-                                                    <a href="#" class="me-2">Admin</a>
-                                                    <a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a>
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="d-flex align-items-center justify-content-end mt-4">
+                                        <p class="mb-0">
+                                            <a href="{{ route('berita.detail', $item->slug_berita) }}" class="btn-read btn-more" style="background-color: #2979FF; color: white; text-decoration: none; padding: 8px 16px; border: none; border-radius: 10px; transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; transform: skew(-15deg);">
+                                                Read More <span class="fa fa-arrow-right"></span>
+                                            </a>
+                                        </p>
                                     </div>
+
+                                    <style>
+                                        .btn-read.btn-more:active {
+                                            background-color: white;
+                                            color: #2979FF;
+                                        }
+                                    </style>
+
+
+
                                 </div>
                             </div>
-                        @endforeach
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            {{-- Informasi berita  end --}}
+                @endforeach
+            </div>
+        </div>
+    </section>
+    {{-- Informasi berita  end --}}
 
 @endsection

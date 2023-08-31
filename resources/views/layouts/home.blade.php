@@ -33,7 +33,7 @@
                         <div class="main-info-area">
                             <div class="left-section wrap-logo-top">
                                 <a href="{{ url('/') }}" class="link-to-home"><img
-                                        src="assets/images/logo-top-1.png" alt="medicom" /></a>
+                                        src="assets/images/markas.png" alt="image" /></a>
                             </div>
                         </div>
                     </div>
